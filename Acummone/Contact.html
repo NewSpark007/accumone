@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Accumone Tech | Contact Us</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        input, textarea {
+            width: 100%;
+            padding: 12px;
+            margin-top: 8px;
+            margin-bottom: 20px;
+            background: #1e293b;
+            border: 1px solid #334155;
+            border-radius: 8px;
+            color: white;
+            box-sizing: border-box;
+        }
+        input:focus, textarea:focus {
+            outline: none;
+            border-color: #22d3ee;
+        }
+        label { font-size: 0.9rem; color: #94a3b8; }
+    </style>
+</head>
+<body>
+    <nav>
+        <div style="font-weight: bold; color: #22d3ee; cursor: pointer;" onclick="location.href='index.html'">ACCUMONE TECH</div>
+        <div>
+            <a href="index.html" class="contact-nav">Home</a>
+            <a href="Dept.html" class="contact-nav">Departments</a>
+            <a href="About.html"class="contact-nav">About Us</a>
+            <a href="Contact.html" class="contact-nav">Contact Us</a>
+        </div>
+    </nav>
+
+    <div class="container">
+        <div style="text-align: center; margin-bottom: 50px;">
+            <h1 style="font-size: 3rem;">Get in <span style="color: #22d3ee;">Touch</span></h1>
+            <p style="color: #94a3b8;">Have questions about our courses or corporate training? We're here to help.</p>
+        </div>
+
+        <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 40px;">
+            <div class="card">
+                <form id="contactForm">
+                    <label>Full Name</label>
+                    <input type="text" placeholder="John Doe" required>
+
+                    <label>Email Address</label>
+                    <input type="email" placeholder="john@example.com" required>
+
+                    <label>Subject</label>
+                    <input type="text" placeholder="Course Inquiry">
+
+                    <label>Message</label>
+                    <textarea rows="5" placeholder="Tell us how we can help..."></textarea>
+
+                    <button type="submit" class="btn" style="width: 100%; border: none; cursor: pointer;">Send Message</button>
+                </form>
+            </div>
+
+            <div style="padding: 20px;">
+                <h3 style="color: #22d3ee;">Corporate Office</h3>
+                <p style="color: #94a3b8;"> JS Housiery Park,2nd Building <br> Anaipudhur,TM Poondi<br>Avinashi,Tiruppur-641 652 </p>
+                
+                <h3 style="color: #22d3ee; margin-top: 30px;">Email Us</h3>
+                <p style="color: #94a3b8;">info@acommunetech.com <br> admissions@accumone.tech <br> support@accumone.tech </p>
+
+                <h3 style="color: #22d3ee; margin-top: 30px;">Call Us</h3>
+                <p style="color: #94a3b8;"> +91-74492 76396 <br> +91 (555) 800-TECH </p>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        document.getElementById('contactForm').addEventListener('submit', function(e) {
+            e.preventDefault();
+            alert('Thank you! Your message to Accumone Tech has been sent successfully.');
+            this.reset();
+        });
+    </script>
+    <script src="Script.js"></script>
+</body>
+</html>
