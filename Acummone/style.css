@@ -312,7 +312,7 @@ nav a:hover { color: var(--cyan-glow); }
         margin-top: 10px !important;
     }
 
-    /* Adjust Hero section for mobile */
+    /* Adjust Hero section for mobilewrf  */
     .hero h1 {
         font-size: 2.5rem; /* Smaller heading so it doesn't wrap weirdly */
         margin-top: 40px;
